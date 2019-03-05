@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.11" sequence="1" timestamp="1551818834250" analysisTimestamp="1551818833606" release="">
+  <Project projectName="project-findbugs">
+    <Jar>C:\Users\Jiahao\project-findbugs-Ma-0305\project-findbugs\bin</Jar>
+    <AuxClasspathEntry>C:\Users\Jiahao\project-findbugs-Ma-0305\project-findbugs\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.jupiter.api_5.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.jupiter.engine_5.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.jupiter.migrationsupport_5.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.jupiter.params_5.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.platform.commons_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.platform.engine_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.platform.launcher_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.platform.runner_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.platform.suite.api_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit.vintage.engine_4.12.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.opentest4j_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.apiguardian_1.0.0.v20170910-2246.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Jiahao\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_191\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_191\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Jiahao\project-findbugs-Ma-0305\project-findbugs\src</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="class_exercise.EncryptionDecryptionAES">
+      <SourceLine classname="class_exercise.EncryptionDecryptionAES" sourcefile="Util.java" sourcepath="class_exercise/Util.java"/>
+    </Class>
+    <Method classname="class_exercise.EncryptionDecryptionAES" name="decrypt" signature="(Ljava/lang/String;Ljavax/crypto/SecretKey;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="class_exercise.EncryptionDecryptionAES" start="51" end="60" startBytecode="0" endBytecode="231" sourcefile="Util.java" sourcepath="class_exercise/Util.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="class_exercise.EncryptionDecryptionAES" start="55" end="55" startBytecode="37" endBytecode="37" sourcefile="Util.java" sourcepath="class_exercise/Util.java"/>
+    <SourceLine classname="class_exercise.EncryptionDecryptionAES" start="55" end="55" startBytecode="37" endBytecode="37" sourcefile="Util.java" sourcepath="class_exercise/Util.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 5 Mar 2019 14:45:25 -0600" total_classes="3" referenced_classes="31" total_bugs="1" total_size="65" num_packages="1" java_version="1.8.0_191" vm_version="25.191-b12" cpu_seconds="1.86" clock_seconds="0.65" peak_mbytes="528.38" alloc_mbytes="1024.00" gc_seconds="0.08" priority_1="1">
+    <PackageStats package="class_exercise" total_bugs="1" total_types="3" total_size="65" priority_1="1">
+      <ClassStats class="class_exercise.EncryptionDecryptionAES" sourceFile="Util.java" interface="false" size="22" bugs="1" priority_1="1"/>
+      <ClassStats class="class_exercise.QuestionSecurityBug" sourceFile="QuestionSecurityBug.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="class_exercise.Util" sourceFile="Util.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="169" invocations="2" avgMicrosecondsPerInvocation="84896" maxMicrosecondsPerInvocation="157612" standardDeviationMicrosecondsPerInvocation="72716"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="136" invocations="421" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="36327" standardDeviationMicrosecondsPerInvocation="1848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="102" invocations="421" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="1730" standardDeviationMicrosecondsPerInvocation="158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="19" invocations="31" avgMicrosecondsPerInvocation="618" maxMicrosecondsPerInvocation="4811" standardDeviationMicrosecondsPerInvocation="1102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="17" invocations="31" avgMicrosecondsPerInvocation="564" maxMicrosecondsPerInvocation="3138" standardDeviationMicrosecondsPerInvocation="747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="13" invocations="89" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="608" standardDeviationMicrosecondsPerInvocation="128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="388" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="526" standardDeviationMicrosecondsPerInvocation="53"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1551818834250" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
